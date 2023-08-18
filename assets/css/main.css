@@ -71,7 +71,7 @@ section {
         align-items: center;
         justify-content: space-between;
         padding: 0 3px;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 600;
         color: rgb(192, 192, 192);
         white-space: nowrap;
@@ -79,6 +79,7 @@ section {
         transition: 0.3s;
         position: relative;
         text-decoration: none;
+        text-transform: uppercase;
 
     }
 
@@ -568,6 +569,219 @@ section {
     color: white;
 }
 
+.hero-staff {
+    width: 100%;
+    position: relative;
+    padding: 20px 0 0 0;
+    background: url('../img/backgrounds/background.png') no-repeat;
+    background-size: cover;
+
+}
+
+.hero-staff::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.56);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.hero-staff img {
+    filter: drop-shadow(1px 1px 11px #000000);
+    width: 200px;
+}
+
+.hero-staff .icon-boxes {
+    padding-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+    .hero-staff .icon-boxes:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: calc(50% + 20px);
+        background-color: rgb(7, 7, 7);
+    }
+}
+
+.hero-staff .icon-box {
+    padding: 30px 30px;
+    position: relative;
+    overflow: hidden;
+    background-color: #0f0f0f;
+    box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in-out;
+    border-radius: 12px;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.hero-staff .icon-box h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding: 0;
+    margin: 0;
+    background: #b751ff;
+    background: -webkit-linear-gradient(to right, #9323e1, #b751ff);
+    background: linear-gradient(to right, #9323e1, #b751ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.hero-staff .icon-box p {
+    font-size: 20px;
+    padding: 0;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: rgb(241, 241, 241);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.hero-staff .icon-box a {
+    background: #b751ff;
+    background: -webkit-linear-gradient(to right, #b751ff, #b751ff);
+    background: linear-gradient(to right, #b751ff, #b751ff);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border-color: rgb(94, 20, 147);
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    margin: 5px;
+    padding: 2px 30px;
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.hero-staff .icon-box a:hover {
+    padding: 5px 33px;
+    border-radius: 50px;
+    transition: all ease-in-out 0.4s;
+}
+
+.staff-section .sep {
+    padding-bottom: 20px;
+}
+
+.staff-section h2 {
+    font-size: 40px;
+    padding-bottom: 30px;
+    letter-spacing: 2px;
+    background: #b751ff;
+    background: -webkit-linear-gradient(to right, #9a2fe5, #b751ff);
+    background: linear-gradient(to right, #9a2fe5, #b751ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.staff-section .title {
+    margin-left: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.staff-section .title a {
+    background: #b751ff;
+    background: -webkit-linear-gradient(to right, #9323e1, #b751ff);
+    background: linear-gradient(to right, #9323e1, #b751ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-weight: 800;
+    margin: 10px 0 15px 0;
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.staff-section .staff img {
+    width: 150px;
+    margin-left: 24px;
+}
+
+.staff-section .staff h3 {
+    text-align: center;
+    padding-left: 15px;
+    color: #e5e5e5;
+    font-size: 18px;
+}
+
+.staff-section h2 {
+    padding-bottom: 30px;
+}
+
+.staff {
+    padding-bottom: 40px;
+}
+
+/*--------------------------------------------------------------
+# Frequently Asked Questions
+--------------------------------------------------------------*/
+.faq .faq-list {
+    padding: 0;
+    list-style: none;
+    background-color: #0f0f0f;
+    border-radius: 20px;
+}
+
+.faq .faq-list li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.faq .faq-list a {
+    display: block;
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    padding-right: 15px;
+    cursor: pointer;
+
+}
+.faq .faq-titles{
+    text-align: center;
+    letter-spacing: 2px;
+    background: #b751ff;
+    background: -webkit-linear-gradient(to right, #9a2fe5, #b751ff);
+    background: linear-gradient(to right, #9a2fe5, #b751ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+    font-weight: 800;
+    padding-top: 10px;
+}
+.faq span{
+    color: #b018b0;
+}
+
+.faq .faq-list a.collapsed {
+    color: white;
+    text-decoration: none;
+    text-align: justify;
+    margin-left: 15px;
+    padding-top: 15px;
+}
+
 .footer {
     font-size: 14px;
     background-color: black;
@@ -621,5 +835,18 @@ section {
 
     .services .title a {
         font-size: 20px;
+    }
+
+    .staff-section .staff img {
+        margin-left: 110px;
+    }
+
+    .staff-section h2 {
+        padding: 0;
+        font-size: 30px;
+    }
+
+    .staff-section .staff h3 {
+        padding-left: 44px;
     }
 }
